@@ -1,4 +1,3 @@
-"""jnknkjkk"""
 from datetime import datetime
 
 def generate_profile(age=int):
