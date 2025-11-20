@@ -1,5 +1,4 @@
-"""jnknkjkk"""
-from datetime import datetime
+from datetime import datetime #библиотека для достоверного года
 
 def generate_profile(age=int):
     if 0<=age<=12:
@@ -11,7 +10,6 @@ def generate_profile(age=int):
     
 
 now = datetime.now()
-
 user_name=input('Enter your full name: ')
 
 while True:
@@ -31,15 +29,11 @@ while True:
     if hobby.lower()=="stop":
         break
     else:
-        hobbies.append(hobby.title())
+        hobbies.append(hobby)
 
-user_profile={"name":user_name.title(),"age":current_age,"status":life_stage,"hobby":hobbies}
+user_profile={"name":user_name,"age":current_age,"status":life_stage,"hobby":hobbies}
 
-print("\n---")
-print("Profile Summary:")
-print(f"Name: {user_profile['name']}")
-print(f"Age: {user_profile['age']}")
-print(f"Life Stage: {user_profile['status']}")
+print(f"\n---\nProfile Summary:\nName: {user_profile['name']}\nAge: {user_profile['age']}\nLife Stage: {user_profile['status']}")
 if len(hobbies)==0:
     print("You didn't mention any hobbies.")
 else:
