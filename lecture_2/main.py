@@ -1,5 +1,4 @@
-from datetime import datetime
-
+from datetime import datetime #библиотека для достоверного года
 def generate_profile(age=int):
     if 0<=age<=12:
         return "Child"
